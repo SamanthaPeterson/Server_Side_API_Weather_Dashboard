@@ -22,11 +22,11 @@ function populateCityWeather(city, citySearchList) {
   createCityList(citySearchList);
 
   var queryURL =
-    "https://api.openweathermap.org/data/2.5/weather?&units=imperial&appid=885e9149105e8901c9809ac018ce8658&q=" +
+    "https://api.openweathermap.org/data/2.5/weather?&units=imperial&appid=993e66d0b0d5090af76f55db0856f1ab&q=" +
     city;
 
   var queryURL2 =
-    "https://api.openweathermap.org/data/2.5/forecast?&units=imperial&appid=885e9149105e8901c9809ac018ce8658&q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?&units=imperial&appid=993e66d0b0d5090af76f55db0856f1ab&q=" +
     city;
 
   var latitude;
@@ -72,7 +72,7 @@ function populateCityWeather(city, citySearchList) {
       longitude = weather.coord.lon;
 
       var queryURL3 =
-        "https://api.openweathermap.org/data/2.5/uvi/forecast?&units=imperial&appid=885e9149105e8901c9809ac018ce8658&q=" +
+        "https://api.openweathermap.org/data/2.5/uvi/forecast?&units=imperial&appid=993e66d0b0d5090af76f55db0856f1ab&q=" +
         "&lat=" +
         latitude +
         "&lon=" +
