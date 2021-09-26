@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+input {
+width: 75%;
+}
+
+
+
+h3{
+    font-weight: bold;
+}
+
+
+h6 {
+font-weight: bold;
+}
+
+h4 {
+    margin: 5px;
+}
+
+
+span{
+    font-size: 1em;
+}
+li:hover{
+    background-color: lightslategray;
+    text-decoration: underline;
+}
+
+
+ul { 
+    list-style-type: none;
+    padding-left: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* lists in current and forecast */
+li { 
+    font-size: 10pt;
+    padding: 5px 0px;
+}
+
+
+
+
+
+
+
+
+.heading {
+background-color: #3c3c3c;
+color: #ffffff;
+text-align: center;
+padding: 10px;
+}
+
+
+.forecast {
+    margin: 10px;
+}
+
+.forecast{
+    
+    font-size: 0.9em;
+}
+
+/* forecast column */
+.col { 
+    padding: 2px;
+}
+
+
+
+/* Current History */
+.card {
+    width: 100%;
+    background-color: #ececec;
+}
+
+
+
+/* Forecast History */
+.forecast-card {
+    color: white;
+    background-color:#1646a0;
+    border-radius: 5px;
+    font-size: 8pt;
+}
+
+
+
+
+/* search section styling */
+.search-section {
+    height: 100%;
+}
+
+
+
+
+/* city history styling */
+.cityList {
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    margin: 5px;
+    padding-left: 2px;
+    background-color: lightgrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* change color when hovering over history list */
+.cityList:hover {
+    background-color: #6996bd;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+#city-list {
+width: 22rem;
+}
+
+#city-date-icon,
+#city-name,
+#current-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center/space-around/space-between;
+}
+
+#forecast-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center/space-between;
+}
+
+
+
+/* header */
+#header {
+    color: whitesmoke;
+}
+/* lists in current and forecast */
+
+
+
+
+
+/* five day  */
+#fiveDayHeader {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+/* Overall Container */
+.container {
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+@media (max-width : 2230.3px ){
+}
+
+@media (max-width: 1587px){
+}
+
+
+@media (max-width: 1587px){
+}
+
+@media (max-width: 1200px){
+}
+
+@media (max-width: 800px){
+}
+
+@media (max-width: 400px){
+}
