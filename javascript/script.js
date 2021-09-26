@@ -202,4 +202,5 @@ $(document).ready(function () {
             $('#currUVI').html(color);
           });
         });
-      }});
+      }
+})
