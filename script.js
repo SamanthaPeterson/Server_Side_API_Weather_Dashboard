@@ -4,13 +4,13 @@ var city="";
 // variable declaration
 var citySearch = $("#city-search");
 var searchForButton = $("#search-for-button");
-var clearButton = $("#clear-history");
-var currentCity = $("#current-city");
-var currentTemperature = $("#temperature");
-var currentHumidty= $("#humidity");
-var currentWSpeed=$("#wind-speed");
-var currentUvindex= $("#uv-index");
-var sCity=[];
+var clearHistoryButton = $("#clear-history-button"); //clearButton clear-history
+var currentLocationOrCity = $("#current-location"); //currentCity = $("#current-city");
+var currentTemperature = $("#current-temperature"); //currentTemperature = $("#temperature");
+var currentHumidityMeasurement = $("#current-humidity"); //currentHumidty= $("#humidity");
+var currentWindSpeed = $("#current-wind-speed"); //currentWSpeed=$("#wind-speed")
+var uvIndex= $("current-uv-index"); //currentUvindex= $("#uv-index");
+var searchCity = []; //sCity=[];
 // searches the city to see if it exists in the entries from the storage
 function find(c){
     for (var i=0; i<sCity.length; i++){
@@ -24,7 +24,7 @@ function find(c){
 
 //the API key
 var APIKey = "993e66d0b0d5090af76f55db0856f1ab";
-// Display the curent and future weather to the user after grabing the city form the input text box.
+// Display the current and future weather to the user after grabbing the city form the input text box.
 function displayWeather(event){
     event.preventDefault();
     if(citySearch.val().trim()!==""){
@@ -49,14 +49,14 @@ function currentWeather(city){
         // The date format method is taken from the  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
         var date=new Date(response.dt*1000).toLocaleDateString();
         //parse the response for name of city and concanatig the date and icon.
-        $(currentCity).html(response.name +"("+date+")" + "<img src="+iconurl+">");
+        $(currentLocationOrCity).html(response.name +"("+date+")" + "<img src="+iconurl+">");
         // parse the response to display the current temperature.
         // Convert the temp to fahrenheit
 
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
         $(currentTemperature).html((tempF).toFixed(2)+"&#8457");
         // Display the Humidity
-        $(currentHumidty).html(response.main.humidity+"%");
+        $(currentHumidityMeasurement).html(response.main.humidity+"%");
         //Display Wind speed and convert to MPH
         var ws=response.wind.speed;
         var windsmph=(ws*2.237).toFixed(1);
