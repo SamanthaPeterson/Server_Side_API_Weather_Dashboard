@@ -1,20 +1,16 @@
 #Weather Tracker
 
-![License Badge](https://img.shields.io/static/v1?label=license&message=MIT&color=brightgreen&style=for-the-badge)
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
 
 
-  <h1 align="center">Workout Tracker</h1>
+  <h1 align="center">Weather Tracker</h1>
 
   <p align="center">
-    A Workout tracker app built using Node.js, Sequelize, MySQL and Express. <br> Project required modules for Sequelize, routes via Express, MySQL Shell to start schemas and seeds for the MySQL database.
+    A weather app built with the Open Weather API - Created by Samantha Peterson
     <br />
-    <a href="https://github.com/tyler1836/workout-tracker"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/SamanthaPeterson/Server_Side_API_Weather_Dashboard"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     
@@ -43,7 +39,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributors">Contributors</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -122,17 +117,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## Contributors
-
-<a href="https://github.com/tyler1836/workout-tracker/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tyler1836/workout-tracker" />
-</a>
-
-
-
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -154,9 +138,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Tyler Role - 
+Samantha Peterson - photographer.samantha@live.com
 
-Project Link: [https://github.com/tyler1836/workout-tracker](https://github.com/brandon-stewart-rgb/paint-headlights)
+Project Link: [https://github.com/SamanthaPeterson/Server_Side_API_Weather_Dashboard](https://github.com/SamanthaPeterson/Server_Side_API_Weather_Dashboard)
 
 
 
@@ -178,11 +162,13 @@ Project Link: [https://github.com/tyler1836/workout-tracker](https://github.com/
 
 ## Table of contents
 
-* [Info](#info)
-* [Technologies](#technologies)
-* [Screenshot](#screenshot)
-* [Credits](#credits)
-* [License](#license)
+- [Weather Dashboard](#weather-dashboard)
+  - [Table of contents](#table-of-contents)
+  - [info](#info)
+  - [Technologies](#technologies)
+  - [Screenshot](#screenshot)
+- [Credits](#credits)
+  - [License](#license-1)
 
 ## info
 
@@ -192,7 +178,11 @@ This project is a weather dashboard app with search functionality to find curren
 
 This project is created with:
 
-* B
+* The Open Weather API
+* Javascript
+* CSS
+* HTML
+* Bootstrap
 
 ## Screenshot
 
@@ -201,8 +191,12 @@ Link to my deployed github page:
 
 # Credits
 
-I sdgsdj
+Open Weather API
+
 
 ## License
 
 MIT License
+
+![License Badge](https://img.shields.io/static/v1?label=license&message=MIT&color=brightgreen&style=for-the-badge)
+
