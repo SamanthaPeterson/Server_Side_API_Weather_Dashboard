@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Require meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie= edge">
+
+  <!-- //----//--- Next Section ---//----// -->
+
+
+  <title>Weather Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- //----//--- Next Section ---//----// -->
+
+  <script src="https://kit.fontawesome.com/efd9680f52.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+  <!-- //----//--- Next Section ---//----// -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- //----//--- Next Section ---//----// -->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+  <!-- //----//--- Next Section ---//----// -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+  <!-- //----//--- Next Section ---//----// -->
+  <!-- Link to css  -->
+  <link rel="stylesheet" href="style.css">
+  <link href="cssdw2.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- //----//--- Next Section ---//----// -->
+
+
+  <!-- //----//--- Next Section ---//----// -->
+  <title>The Weather Dashboard</title>
+</head>
+
+<body>
+  <!-- Beginning of jumbotron  -->
+  <div class=" jumbotron-fluid bg-dark text-white text-center">
+    <div class="container">
+      <h1 class="weather-dashboard-title">The Weather Dashboard</h1>
+    </div>
+  </div>
+
+  <!--Name-->
+  <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color:#404040 ;color: white;">
+    <h1> <strong>Samantha Peterson</strong></h1>
+  </div>
+
+  <!-- //----//--- Next Section ---//----// -->
+  <!--Row for searching a city-->
+
+  <!--Here we create an HTML form for handling the inputs-->
+  <div class="container">
+    <h4 class="pt-1"><strong>Search for a City:</strong></h4>
+
+    <!--Row for searching a city-->
+    <!-- //----//--- Next Section ---//----// -->
+    <!-- Search for city -->
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 col-xl-12">
+
+          <div class="card search-section">
+
+            <div class="card-body">
+              <label><strong>ENTER CITY OR ZIP CODE HERE:</strong></label>
+              <div class="input-group mb-3">
+                <!-- Input box -->
+                <input id="cityEntered" type="text" class="form-control" placeholder="Nephi">
+                <div class="input-group-append">
+                  <!-- search button using primary blue color -->
+                  <button id="getEnteredCityWeather" class="btn btn-primary" type="submit">
+                    <i id="getWeatherIcon" class="fas fa-search" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- //----//--- Next Section ---//----// -->
+
+              <!-- //----//--- Next Section ---//----// -->
+              <!-- Historical Cities -->
+            </div>
+          </div>
+        </div>
+
+        <!--section for search city history-->
+        <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
+        <ul class="list-group">
+
+        </ul>
+      </div>
+      <div class="col-xl-12 col-lg-12 col-sm-12">
+        <div class="row ml-2 border border-dark rounded">
+          <div class="col-sm-12" id="current-weather">
+            <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+            <p class="text-uppercase"><strong>&nbsp;City</strong></p>
+
+            <p>Temperature:<span class="current" id="temperature"> </span></p>
+            <p>Humidity:<span class="current" id="humidity"></span></p>
+
+
+
+            <p>Windspeed:&nbsp;</p>
+            <p>UV Index:&nbsp;</p>
+          </div>
+        </div>
+
+        <!-- //----//--- Next Section ---//----// -->
+
+        <!-- //----//--- Next Section ---//----// -->
+
+        <!-- //----//--- 5 day forcast ---//----// -->
+
+        <!--Row for future data to be dumped here-->
+        <div class="col-sm-12" id="future-weather">
+          <h3>5 Day Forecast:</h3>
+          <div class="row text-light">
+            <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+              <p>Temp:</p>
+              <p>Humidity:</p>
+            </div>
+            <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+              <p>Temp:</p>
+              <p>Humidity:</p>
+            </div>
+            <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+              <p>Temp:</p>
+              <p>Humidity:</p>
+            </div>
+            <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+              <p>Temp:</p>
+              <p>Humidity:</p>
+            </div>
+            <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+              <p>Temp:</p>
+              <p>Humidity:</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- //----//--- Next Section ---//----// -->
+
+  <!-- //----//--- Next Section ---//----// -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+    crossorigin="anonymous"></script>
+
+  <!-- //----//--- Next Section ---//----// -->
+
+  <script src="moment.js"></script>
+
+  <!-- //----//--- Next Section ---//----// -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"
+    integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
+
+  <!-- //----//--- Next Section ---//----// -->
+  <script src="./script.js"></script>
+  <script src="/assets/javascript/script.js"></script>
+  <script src="/assets/javascript/js.js"></script>
+  <script src="/assets/javascript/javascriptdw.js"></script>
+  <!-- //----//--- Next Section ---//----// -->
+
+  <script src="https://kit.fontawesome.com/70fcd40144.js" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
