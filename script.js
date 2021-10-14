@@ -167,5 +167,5 @@ function clearHistory(event) {
 //click handlers
 $("#search-for-button").on("click", displayWeather);
 $(document).on("click", invokePastSearch);
-$(window).on("load", loadlastCity);
+$(window).on("load", loadLastCity);
 $("#clear-history").on("click", clearHistory);
