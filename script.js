@@ -11,12 +11,15 @@ var currentWindSpeed = $("#current-wind-speed");
 var uvIndex = $("current-uv-index");
 var searchCity = [];
 // search city - see if it exists in the storage
+//The FINDC function searches string for the first occurrence of the specified characters, and returns the position of the first character found. If no characters are found in string, then FINDC returns a value of 0.
+//https://www.w3schools.com/jsref/jsref_find.asp
 function find(c) {
     for (var i = 0; i < sCity.length; i++) {
         if (c.toUpperCase() === sCity[i]) {
             return -1;
         }
     }
+    //https://stackoverflow.com/questions/8282802/what-do-return-1-1-and-0-mean-in-this-javascript-code/8282827
     return 1;
 }
 
@@ -87,6 +90,7 @@ function currentWeather(city) {
 function UVIndex(ln, lt) {
     //lets build the url for uvindex
     var uvqURL = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lt + "&lon=" + ln;
+   //https://www.w3schools.com/js/js_ajax_intro.asp
     $.ajax({
         url: uvqURL,
         method: "GET"
@@ -139,7 +143,7 @@ function invokePastSearch(event) {
 }
 
 // render function
-function loadlastCity() {
+function loadLastCity() {
     $("ul").empty();
     var sCity = JSON.parse(localStorage.getItem("cityname"));
     if (sCity !== null) {
