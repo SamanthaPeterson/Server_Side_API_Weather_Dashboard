@@ -21,8 +21,9 @@ This project is a weather dashboard app with search functionality to find curren
  
 
 ## Screenshot
+<img width="1159" alt="Screen Shot 2021-10-15 at 1 41 59 AM" src="https://user-images.githubusercontent.com/85209802/137450920-a0da1f4e-9bd3-434d-af2f-a781b1411472.png">
 
-![project screenshot](
+
 
 
 Click this link to view the project https://samanthapeterson.github.io/Server_Side_API_Weather_Dashboard/
