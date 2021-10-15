@@ -27,6 +27,10 @@ function find(c) {
 //the API key
 var APIKey = "993e66d0b0d5090af76f55db0856f1ab";
 // Display current & future weather after getting the city form input text box.
+// WHEN I search for a city
+// THEN I am presented with current and future conditions
+// for that city and that city is added to the search history
+//see the project requirements 
 function displayWeather(event) {
     event.preventDefault();
     if (citySearch.val().trim() !== "") {
@@ -42,7 +46,10 @@ function currentWeather(city) {
         url: queryURL,
         method: "GET",
     }).then(function (response) {
-
+        // WHEN I view current weather conditions
+        // for that city
+        // THEN I am presented with the city name, the date, an icon representation of weather conditions, 
+        // the temperature, the humidity, the wind speed, and the UV index
         // parse response - display current weather - include City name, Date and weather icon. 
         console.log(response);
         //Dta object from server side Api for icon property.
@@ -90,7 +97,7 @@ function currentWeather(city) {
 function UVIndex(ln, lt) {
     //lets build the url for uvindex
     var uvqURL = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lt + "&lon=" + ln;
-   //https://www.w3schools.com/js/js_ajax_intro.asp
+    //https://www.w3schools.com/js/js_ajax_intro.asp
     $.ajax({
         url: uvqURL,
         method: "GET"
