@@ -30,7 +30,7 @@ var APIKey = "993e66d0b0d5090af76f55db0856f1ab";
 // WHEN I search for a city
 // THEN I am presented with current and future conditions
 // for that city and that city is added to the search history
-//see the project requirements 
+//see the project requirements file
 function displayWeather(event) {
     event.preventDefault();
     if (citySearch.val().trim() !== "") {
@@ -51,6 +51,7 @@ function currentWeather(city) {
         // THEN I am presented with the city name, the date, an icon representation of weather conditions, 
         // the temperature, the humidity, the wind speed, and the UV index
         // parse response - display current weather - include City name, Date and weather icon. 
+        //see the project requirements file
         console.log(response);
         //Dta object from server side Api for icon property.
         var weathericon = response.weather[0].icon;
