@@ -188,3 +188,8 @@ $("#search-for-button").on("click", displayWeather);
 $(document).on("click", invokePastSearch);
 $(window).on("load", loadLastCity);
 $("#clear-history").on("click", clearHistory);
+
+
+//Resources and References 
+//https://getbootstrap.com/ Bootstrap
+//https://getbootstrap.com/docs/5.1/getting-started/introduction/

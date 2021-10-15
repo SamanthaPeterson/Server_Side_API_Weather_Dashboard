@@ -3,3 +3,6 @@ indexdw.html
 .DS_Store
 .DS_Store
 .DS_Store
+.package-lock.JSON
+node_modules
+
