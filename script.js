@@ -110,7 +110,9 @@ function UVIndex(ln, lt) {
         $(currentUvindex).html(response.value);
     });
 }
-
+//WHEN I view future weather conditions for that city
+// THEN I am presented with a 5 - day forecast that displays the date, an icon representation
+//  of weather conditions, the temperature, the wind speed, and the humidity
 // Display the 5 days forecast for the current city
 function forecast(cityid) {
     var dayover = false;
@@ -137,7 +139,11 @@ function forecast(cityid) {
     });
 }
 
-//Add the passed city on the search history
+
+// WHEN I click on a city in the search history
+// THEN I am again presented with current and future conditions
+// for that city
+
 function addToList(c) {
     var listEl = $("<li>" + c.toUpperCase() + "</li>");
     $(listEl).attr("class", "list-group-item");
