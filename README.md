@@ -1,4 +1,4 @@
-#Weather Tracker
+
 
 <!-- PROJECT LOGO -->
 <br />
@@ -15,7 +15,7 @@
     <br />
     
    
-## Info
+## Brief Summary 
 
 This project is a weather dashboard app with search functionality to find current weather conditions and forecasted weather for multiple cities. It uses the OpenWeather API to retrieve data for the cities, AJAX to hook into the API to retrieve the data in JSON format, dynamically updated HTML and CSS powered by jQuery, and displays a search history which the user can click to access past cities searched via local storage.
  
@@ -23,8 +23,9 @@ This project is a weather dashboard app with search functionality to find curren
 ## Screenshot
 
 ![project screenshot](
-Link to my deployed github page:
 
+
+Click this link to view the project https://samanthapeterson.github.io/Server_Side_API_Weather_Dashboard/
 
    
   </p>
@@ -69,13 +70,12 @@ Screenshot coming soon
 
 ### Built With
 
-* [Node.js](https://nodejs.dev/)
-* [Sequelize ORM](https://sequelize.org/)
-* [Express](https://expressjs.com/)
-* [dotenv](https://www.npmjs.com/package/dotenv)
-* [npm](https://www.npmjs.com/)
-* [bcrypt](https://www.npmjs.com/package/bcrypt)
-* [Connect Session Store using Sequelize](https://www.npmjs.com/package/connect-session-sequelize)
+* [Bootstrap](https://getbootstrap.com/)
+* [CSS](https://www.w3schools.com/css/css_intro.asp)
+* [Javascript](https://expressjs.com/)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [Open Weather API](https://openweathermap.org/api)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
 
 
@@ -128,7 +128,25 @@ Please feel free to contribute to the project. Email me with any questions or co
 <!-- CONTACT -->
 ## Contact
 
-Samantha Peterson - photographer.samantha@live.com
+Samantha Peterson 
+
+Github: https://github.com/SamanthaPeterson
+
+Linkedin: https://www.linkedin.com/in/samantha-peterson-web-developer-photographer/
+ 
+Twitter:
+@CodingAndDesign
+https://twitter.com/CodingAndDesign
+
+Portfolio
+https://photographersama.myportfolio.com/
+
+
+Email photographer.samantha@live.com
+
+
+ 
+
 
 Project Link: [https://github.com/SamanthaPeterson/Server_Side_API_Weather_Dashboard](https://github.com/SamanthaPeterson/Server_Side_API_Weather_Dashboard)
 
