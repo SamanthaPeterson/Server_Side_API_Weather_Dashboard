@@ -53,7 +53,7 @@ function currentWeather(city) {
         // parse response - display current weather - include City name, Date and weather icon. 
         //see the project requirements file
         console.log(response);
-        //Dta object from server side Api for icon property.
+        //Data object from server side Api for icon property.
         var weathericon = response.weather[0].icon;
         var iconurl = "https://openweathermap.org/img/wn/" + weathericon + "@2x.png";
         // The date format method  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
