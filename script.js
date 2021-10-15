@@ -94,6 +94,10 @@ function currentWeather(city) {
 
     });
 }
+// WHEN I view the UV index
+// THEN I am presented with a color that indicates whether the conditions are 
+// favorable, moderate, or severe
+//see the project requirements file
 // Function returns the UVI index response
 function UVIndex(ln, lt) {
     //lets build the url for uvindex
