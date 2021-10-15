@@ -10,11 +10,22 @@
   <p align="center">
     A weather app built with the Open Weather API - Created by Samantha Peterson
     <br />
-    <a href="https://github.com/SamanthaPeterson/Server_Side_API_Weather_Dashboard"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/SamanthaPeterson/Server_Side_API_Weather_Dashboard"><strong>Check it out »</strong></a>
     <br />
     <br />
     
    
+## Info
+
+This project is a weather dashboard app with search functionality to find current weather conditions and forecasted weather for multiple cities. It uses the OpenWeather API to retrieve data for the cities, AJAX to hook into the API to retrieve the data in JSON format, dynamically updated HTML and CSS powered by jQuery, and displays a search history which the user can click to access past cities searched via local storage.
+ 
+
+## Screenshot
+
+![project screenshot](
+Link to my deployed github page:
+
+
    
   </p>
 </p>
@@ -34,7 +45,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -74,28 +84,20 @@ Screenshot coming soon
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
-
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
-1. Clone the repo
+1. Click on the link below or enter it in your browser
    ```sh
-   git clone https://github.com/tyler1836/workout-tracker
+    https://samanthapeterson.github.io/Server_Side_API_Weather_Dashboard/
    ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+2. Enter city names in the search bar, and view the current and forecast weather information available
+
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Usage and License Agreement
 
 This software is licensed under the:
 
@@ -120,19 +122,7 @@ SOFTWARE.
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create.
-
-1. Fork the Project
-2. Have fun.
-
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
+Please feel free to contribute to the project. Email me with any questions or concerns 
 
 
 <!-- CONTACT -->
@@ -147,56 +137,7 @@ Project Link: [https://github.com/SamanthaPeterson/Server_Side_API_Weather_Dashb
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [Node.js](https://nodejs.dev/)
-* [Sequelize ORM](https://sequelize.org/)
-* [Express](https://expressjs.com/)
-* [dotenv](https://www.npmjs.com/package/dotenv)
-* [npm](https://www.npmjs.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Open Weather API](https://sequelize.org/)
 
-
-
-
-
-
-# Weather Dashboard
-
-## Table of contents
-
-- [Weather Dashboard](#weather-dashboard)
-  - [Table of contents](#table-of-contents)
-  - [info](#info)
-  - [Technologies](#technologies)
-  - [Screenshot](#screenshot)
-- [Credits](#credits)
-  - [License](#license-1)
-
-## info
-
-This project is a weather dashboard app with search functionality to find current weather conditions and forecasted weather for multiple cities. It uses the OpenWeather API to retrieve data for the cities, AJAX to hook into the API to retrieve the data in JSON format, dynamically updated HTML and CSS powered by jQuery, and displays a search history which the user can click to access past cities searched via local storage.
- 
-## Technologies
-
-This project is created with:
-
-* The Open Weather API
-* Javascript
-* CSS
-* HTML
-* Bootstrap
-
-## Screenshot
-
-![project screenshot](
-Link to my deployed github page:
-
-# Credits
-
-Open Weather API
-
-
-## License
-
-MIT License
-
-![License Badge](https://img.shields.io/static/v1?label=license&message=MIT&color=brightgreen&style=for-the-badge)
 
