@@ -63,10 +63,6 @@ Click this link to view the project https://samanthapeterson.github.io/Server_Si
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Screenshot coming soon
-
-<!-- ![Screenshot ](public/assets/img/screenshot.png) -->
-
 
 
 ### Built With
@@ -82,8 +78,6 @@ Screenshot coming soon
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-To get a local copy up and running follow these simple steps.
 
 
 ### Installation
