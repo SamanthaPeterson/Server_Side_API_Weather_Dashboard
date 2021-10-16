@@ -69,8 +69,11 @@ function currentWeather(city) {
         $(currentHumidityMeasurement).html(response.main.humidity + "%");
         //Display Wind speed and convert to MPH
         var ws = response.wind.speed;
-        var windsmph = (ws * 2.237).toFixed(1);
-        $(currentWSpeed).html(windsmph + "MPH");
+        var currentWindSpeed = (ws * 2.237).toFixed(1);
+        $(currentWSpeed).html(currentWindSpeed + "MPH");
+        //  var windsmph = (ws * 2.237).toFixed(1);
+        //  $(currentWSpeed).html(windsmph + "MPH");
+
         // Show UVIndex.
         //
         UVIndex(response.coord.lon, response.coord.lat);
