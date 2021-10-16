@@ -63,8 +63,8 @@ function currentWeather(city) {
         // parse response -display current temperature
         // Change temp to fahrenheit
 
-        var tempF = (response.main.temp - 273.15) * 1.80 + 32;
-        $(currentTemperature).html((tempF).toFixed(2) + "&#8457");
+        var tempFahrenheit  = (response.main.temp - 273.15) * 1.80 + 32;
+        $(currentTemperature).html((tempFahrenheit ).toFixed(2) + "&#8457");
         // Display the Humidity
         $(currentHumidityMeasurement).html(response.main.humidity + "%");
         //Display Wind speed and convert to MPH
@@ -128,12 +128,12 @@ function forecast(cityid) {
             var iconcode = response.list[((i + 1) * 8) - 1].weather[0].icon;
             var iconurl = "https://openweathermap.org/img/wn/" + iconcode + ".png";
             var tempK = response.list[((i + 1) * 8) - 1].main.temp;
-            var tempF = (((tempK - 273.5) * 1.80) + 32).toFixed(2);
+            var tempFahrenheit  = (((tempK - 273.5) * 1.80) + 32).toFixed(2);
             var humidity = response.list[((i + 1) * 8) - 1].main.humidity;
 
             $("#futureDate" + i).html(date);
             $("#futureWeatherImage" + i).html("<img src=" + iconurl + ">");
-            $("#futureWeatherTemp" + i).html(tempF + "&#8457");
+            $("#futureWeatherTemp" + i).html(tempFahrenheit  + "&#8457");
             $("#futureHumidity" + i).html(humidity + "%");
         }
 

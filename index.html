@@ -17,83 +17,84 @@
 <body>
     <!--Jumbotron for Title-->
     <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color:#404040 ;color: white;">
-        <h1> <strong>Samantha Peterson Weather Dashboard</strong></h1>
+        <h1> <strong>Weather Dashboard</strong></h1>
     </div>
     <div class="container">
         <!--Searching for a city-->
         <!-- WHEN I search for a city
 THEN I am presented with current and future conditions for that city and that city
- is added to the search history
-        <div class="row"> -->
-        <div class="col-sm-4 bg-light">
-            <!--Handling inputs-->
-            <h4 class="pt-1"><strong>Search for a City:</strong></h4>
-            <!--create text box for capturing the search city Name-->
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" id="city-search" aria-label="City Search"
-                    aria-describedby="search-for-button">
-                <div class="input-group-append">
-                    <button class=" btn bg-primary text-light" id="search-for-button"><i
-                            class="fa fa-search"></i></button>
+is added to the search history-->
+        <div class="row">
+            <div class="col-sm-4 bg-light">
+                <!--Handling inputs-->
+                <h4 class="pt-1"><strong>Search for a City:</strong></h4>
+                <!--create text box for capturing the search city Name-->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="city-search" aria-label="City Search"
+                        aria-describedby="search-for-button">
+                    <div class="input-group-append">
+                        <button class=" btn bg-primary text-light" id="search-for-button"><i
+                                class="fa fa-search"></i></button>
+                    </div>
                 </div>
-            </div>
-            <!-- search city history-->
-            <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
-            <ul class="list-group">
-                <!-- WHEN I view current weather conditions for that city
+                <!-- search city history-->
+                <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
+                <ul class="list-group">
+                    <!-- WHEN I view current weather conditions for that city
 THEN I am presented with the city name, the date, an icon representation of weather conditions, 
 the temperature, the humidity, the wind speed, and the UV index 
 see the project requirements file-->
-            </ul>
-        </div>
-        <div class="col-sm-8">
-            <div class="row ml-2 border border-dark rounded">
-                <div class="col-sm-12" id="current-weather">
-                    <h3 class="city-name mb-1 mt-2 bolder" id="current-location"></h3>
-                    <p>Temperature:<span class="current" id="current-temperature"></span></p>
-                    <p>Humidity:<span class="current" id="current-humidity"></span></p>
-                    <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
-                    <p>UV index:<span class="current bg-danger rounded py-2 px-2 text-white" id="uv-index"></span></p>
-                </div>
+                </ul>
             </div>
-            <!--Row for future data to be put here-->
-            <div class="col-sm-12" id="future-weather">
-                <h3>5-Day Forecast:</h3>
-                <div class="row text-light">
-                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                        <p id="futureDate0"></p>
-                        <p id="futureWeatherImage0"></p>
-                        <p>Temp:<span id="futureWeatherTemp0"></span></p>
-                        <p>Humidity:<span id="futureHumidity0"></span></p>
-                    </div>
-                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                        <p id="futureDate1"></p>
-                        <p id="futureWeatherImage1"></p>
-                        <p>Temp:<span id="futureWeatherTemp1"></span></p>
-                        <p>Humidity:<span id="futureHumidity1"></span></p>
-                    </div>
-                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                        <p id="futureDate2"></p>
-                        <p id="futureWeatherImage2"></p>
-                        <p>Temp:<span id="futureWeatherTemp2"></span></p>
-                        <p>Humidity:<span id="futureHumidity2"></span></p>
-                    </div>
-                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                        <p id="futureDate3"></p>
-                        <p id="futureWeatherImage3"></p>
-                        <p>Temp:<span id="futureWeatherTemp3"></span></p>
-                        <p>Humidity:<span id="futureHumidity3"></span></p>
-                    </div>
-                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                        <p id="futureDate4"></p>
-                        <p id="futureWeatherImage4"></p>
-                        <p>Temp:<span id="futureWeatherTemp4"></span></p>
-                        <p>Humidity:<span id="futureHumidity4"></span></p>
+            <div class="col-sm-8">
+                <div class="row ml-2 border border-dark rounded">
+                    <div class="col-sm-12" id="current-weather">
+                        <h3 class="city-name mb-1 mt-2 bolder" id="current-location"></h3>
+                        <p>Temperature:<span class="current" id="current-temperature"></span></p>
+                        <p>Humidity:<span class="current" id="current-humidity"></span></p>
+                        <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                        <p>UV index:<span class="current bg-danger rounded py-2 px-2 text-white" id="uv-index"></span>
+                        </p>
                     </div>
                 </div>
+                <!--Row for future data to be put here-->
+                <div class="col-sm-12" id="future-weather">
+                    <h3>5-Day Forecast:</h3>
+                    <div class="row text-light">
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="futureDate0"></p>
+                            <p id="futureWeatherImage0"></p>
+                            <p>Temp:<span id="futureWeatherTemp0"></span></p>
+                            <p>Humidity:<span id="futureHumidity0"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="futureDate1"></p>
+                            <p id="futureWeatherImage1"></p>
+                            <p>Temp:<span id="futureWeatherTemp1"></span></p>
+                            <p>Humidity:<span id="futureHumidity1"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="futureDate2"></p>
+                            <p id="futureWeatherImage2"></p>
+                            <p>Temp:<span id="futureWeatherTemp2"></span></p>
+                            <p>Humidity:<span id="futureHumidity2"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="futureDate3"></p>
+                            <p id="futureWeatherImage3"></p>
+                            <p>Temp:<span id="futureWeatherTemp3"></span></p>
+                            <p>Humidity:<span id="futureHumidity3"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="futureDate4"></p>
+                            <p id="futureWeatherImage4"></p>
+                            <p>Temp:<span id="futureWeatherTemp4"></span></p>
+                            <p>Humidity:<span id="futureHumidity4"></span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <footer class="mt-5 p-3 text-center bg-light">
         Weather Dashboard &copy 2021
